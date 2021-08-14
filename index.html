@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="I am looking for a job as a professional programmer, developer, and 3D artist and graphic designer.">
+  <meta name="keywords" content="web designer, graphic designer, professional programmer, developer, 3d artist, CV">
+  <title>Reka's webpage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav>
+        <ul class="menu-container">
+          <li class="menu" onclick="currentSlide(1)"><a href="#">Home</a></li>
+          <li class="menu" onclick="currentSlide(2)"><a href="#">About</a></li>
+          <li class="menu" onclick="currentSlide(3)"><a href="#">Works</a></li>
+          <li class="menu" onclick="currentSlide(4)"><a href="#">Contact</a></li>
+        </ul>
+        <ul class="social">
+          <li><a href="https://www.facebook.com/rekassy.eszter" target="_blank">fb</a></li>
+          <li><a href="https://www.instagram.com/rekassy.e/" target="_blank">Ig</a></li>
+        </ul>
+     </nav>
+
+<!-------------- PAGE 1 ----------------->
+      <div class="mySlides">
+        <section id="page1-header">
+          <h1 class="header">Hello!</h1>
+        </section>
+        <div class="content flexcontainer">
+
+          <div class="kep bg1">
+            <img src="img/IMG_n1.jpg" alt="">
+          </div>
+          <div class="text">
+            <p>A Green Fox Academy és a HTTP Alapítvány 
+              összefogásával létrjött <h1>#MyFirstApp Coding 
+              Camp</h1> három hetes tanfolyamán vettem részt.</p>
+            <p>Az itt készült munkáimból láthatsz egy 
+              válogatást ezen az oldalon.</p>
+          </div>
+
+        </div>
+      </div>
+<!-------------- PAGE 2 ----------------->  
+      <div class="mySlides">
+        <section id="page2-header">
+          <h1 class="header">I'm Reka</h1>
+        </section>
+        <div class="content flexcontainer">
+            <div class="kep bg2">
+              <img src="img/IMG_n2.jpg" alt="">
+            </div>
+
+            <div class="text">
+<!--      <p>Grafikus vagyok,és érdekel a programozás.</p> -->
+              <p class="sbold">Professzionális programozó vagyok, fejlesztő, webdesigner, graphic designer és 3d artist.</p>
+              <p>(html, css, js, jquery • photoshop, illustrator, indesign, after effect, blender 3d)</p>
+              <ul>
+                <li>nincs B kategóriás jogsim</li>
+                <li>nem beszélek 10 nyelven</li>
+                <li>nem vagyok már fiatal</li>
+              </ul>
+              <p>DE</p>
+              <p>annál nagyobb a tapasztalatom, rálátásom az 
+                összefüggésekre, a probléma megoldó képességem, 
+                a teherbírásom
+                .... és még sorolhatnám.
+              </p>
+            </div>
+
+        </div>
+      </div>
+<!-------------- PAGE 3 ----------------->
+      <div class="mySlides">
+        <section id="page3-header">
+          <h1 class="header">My works</h1>
+        </section>
+         <div class="content">
+           <div class="flexcontainer">
+              <div class="kiskep"><a href="https://codepen.io/reeeka/pen/QWvowxG" target="_blank"><img src="img/w14.jpg"alt="Image slider"></a></div>
+              <div class="kiskep"><a href="https://codepen.io/reeeka/pen/XWROrwb" target="_blank"><img src="img/w13.jpg" alt="Todo List"></a></div>
+              <div class="kiskep"><a href="https://codepen.io/reeeka/pen/KKmbLgB" target="_blank"><img src="img/w12.jpg" alt="Counter"></a></div>
+              <div class="kiskep"><a href="https://codepen.io/reeeka/pen/yLbjXEW" target="_blank"><img src="img/w11.jpg" alt="Webpage-1"></a></div>
+              <div class="kiskep"><a href="https://codepen.io/reeeka/pen/eYWrXMw" target="_blank"><img src="img/w10.jpg" alt="Webpage-2"></a></div>
+              <div class="kiskep"><a href="https://codepen.io/reeeka/pen/ZEKrraV" target="_blank"><img src="img/w9.jpg" alt="Awesome Landing Page"></a></div>
+              <div class="kiskep"><a href="https://codepen.io/reeeka/pen/qBmYmxw" target="_blank"><img src="img/w8.jpg" alt="All together"></a></div>
+              <div class="kiskep"><a href="https://codepen.io/reeeka/pen/GRmdKvo" target="_blank"><img src="img/w7.jpg" alt="Basic flex"></a></div>
+              <div class="kiskep"><a href="https://codepen.io/reeeka/pen/rNmvavw" target="_blank"><img src="img/w6.jpg" alt="Four Boxes"></a></div>
+              <div class="kiskep"><a href="https://codepen.io/reeeka/pen/QWvmYex" target="_blank"><img src="img/w4.jpg" alt="My First Little Page"></a></div>
+              <div class="kiskep"><a href="https://codepen.io/reeeka/pen/wvdPrbO" target="_blank"><img src="img/w3.jpg" alt="North East South West"></a></div>
+              <div class="kiskep"><a href="https://codepen.io/reeeka/pen/OJmQmRm" target="_blank"><img src="img/w1.jpg" alt="Form"></a></div>
+          </div>
+        </div>
+      </div>
+<!-------------- PAGE 4 ----------------->
+      <div class="mySlides">
+        <section id="page4-header">
+          <h1 class="header">Contact</h1>
+        </section>
+         <div class="content flexcontainer" id="contact">
+          
+          <div class="kep bg3">
+            <img src="img/IMG_n3.jpg" alt="">
+          </div>
+
+          <div class="text">
+            <p>Ha szeretnéd, hogy neked dolgozzak 
+              (és persze ha nekem is megfelel), akkor keress!</p>
+            <form id="contactform" name="commentform" method="post" action="send_form_email.php">
+                <label for="last_name"></label>
+                <input type="text" id="last_name" name="last_name" placeholder="Name" onfocus="this.placeholder = '' ">
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Email" onfocus="this.placeholder = '' ">
+                <label for="uzenet"></label>
+              <div class="sor">
+                  <textarea id="comments" rows="1" name="comments" placeholder="Message" onfocus="this.placeholder = '' "></textarea>
+                  <button type="submit" value="submit" id="submitbtn">OK</button>
+              </div>
+              <p>UI: szeretem a csokit!</p>
+              <p class="mj">de azt NE emailben küldjél</p>
+            </form>
+            
+          </div>
+        </div>
+</div>
+<!-- partial -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script  src="./script.js"></script>
+
+</body>
+</html>
