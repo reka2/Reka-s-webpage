@@ -10,7 +10,7 @@ if(isset($_POST['email'])) {
     function died($error) {
         // your error code can go here
         echo "Error. ";
-        echo "!!!.<br /><br />";
+        echo "!!!!.<br /><br />";
         echo $error."<br /><br />";
         echo "Please, try again.<br /><br />";
         die();
@@ -19,7 +19,7 @@ if(isset($_POST['email'])) {
     if(!isset($_POST['last_name']) ||
         !isset($_POST['email']) ||        
         !isset($_POST['comments'])) {
-        died('hiba.');       
+        died('error.');       
     }
  
     $last_name = $_POST['last_name']; // required
@@ -61,7 +61,7 @@ $headers = 'From: '.$email_from."\r\n".
 'X-Mailer: PHP/' . phpversion();
 @mail($email_to, $email_subject, $email_message, $headers);
 sleep(2);
-echo "<meta http-equiv='refresh' content=\"0; url=https://reka2.github.hu/\">";
+echo "<meta http-equiv='refresh' content=\"0; url=https://reka2.github.io/\">";
 ?>
  
 <?php

@@ -133,7 +133,7 @@ h1.header {
   background-size: cover;
 }
 /* --------------- */
-#contactform {
+#commentform {
   max-width:2000px;
   margin:50px 0 80px 0;  
 }
@@ -149,11 +149,20 @@ textarea {
   margin-bottom:-22px;
 }
 #last_name,
-#email {
+#email,
+.sor {
   min-width:490px;
+  width:100%;
 }
 #comments {
   min-width:420px;
+  width:100%;
+}
+.sor {
+  display:inline-flex;
+  width:100%;
+  justify-content:space-between;
+  align-content:stretch;
 }
 input:focus,
 select:focus,
@@ -169,16 +178,14 @@ input:focus::placeholder,
 textarea:focus::placeholder {
   color: transparent;
 }
-.sor {
-  display:inline;
-}
 #submitbtn {
-
   color:#fff;
   background:#3E4651;
   padding:16px 15px 16px 15px;
   margin:0px;
-  margin-top:-10px;
+  margin-top:0px;
+  margin-left:auto;
+  margin-right:0px;
   font-size:22px;
   box-shadow:none;
   border:none;
@@ -189,6 +196,10 @@ textarea:focus::placeholder {
 #submitbtn.active {
   color:#fff;
   background:#D8A63B;
+}
+iframe {
+  width:100%;
+  height:600px;
 }
 /* ----------------------------------------------- */
 @media screen and (min-width: 768px) {
@@ -280,7 +291,7 @@ textarea:focus::placeholder {
     text-align:left;
     flex: 1 0 60%;
 }
-  #contactform {
+  #commentform {
     max-width:2000px;
     margin:50px 0 80px 0;
     height:40px;
@@ -303,8 +314,7 @@ textarea:focus::placeholder {
     width:100%;
   }
   #comments {
-    flex-grow:2;
-    min-width:420px;
+    min-width:440px;
     width:100%;
   }
   #submitbtn {
@@ -321,8 +331,12 @@ textarea:focus::placeholder {
   }
   .sor {
     display:inline-flex;
-    width:103%;
+    width:100%;
     justify-content:space-between;
     align-content:stretch;
     }
+  iframe {
+    width:100%;
+    height:600px;
+  }
 }
